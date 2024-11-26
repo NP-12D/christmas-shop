@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    max-width: 1440px;
+    margin: auto;
+    box-sizing: border-box;
+    font-family: Montserrat;
+  
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Headre style*/
+.logo__img{
+    
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+   
+
+
+}
+nav{
+    
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   padding: 12px 82px ;
+   text-align: center;
+   
+
+}
+.logo__text{
+   
+    font-family: 'Montserrat';
+    font-size: 11.9px;
+    font-weight: 600;
+    line-height: 15.6px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #181C29;
+    
+   
+}
+
+.Logo {
+    box-sizing: border-box;
+    width:8.8125rem;
+    height: 2.5rem;
+  display: flex;
+  align-items: center;
+  
+  padding: 8px 20px;
+}
+a{
+    text-decoration: none;
+    color:#FFFFFF;
+   
+}
+
+.container__item:hover{
+    background-color: rgb(6, 6, 6,0.2);
+    color:red;
+ 
+}
+.container{
+   
+    width: 70.1875rem ;
+    height: 2.5rem;
+    margin-left: 19px;
+    box-sizing: border-box;
+    padding-left: 46.6875rem;
+
+
+}
+.container__list{
+    
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0px;
+    padding: 0;
+    
+    
+   
+}
+.container__item{
+padding: 12px 20px;
+margin-right: 8px;
+font-family: 'Montserrat';
+font-size: 12px;
+font-weight: 600;
+line-height: 15.6px;
+letter-spacing: 0.05em;
+text-align: left;
+}
+/*                                                          */
+
+/*HERO SECTION STYLE*/
+#Hero{
+height: 32.75rem;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+background-color: #FF4646;
+background-image: url(../christmas-shop/images/bg-snow.png) ,url(../christmas-shop/images/bg-ball.png);
+background-size: cover;
+background-position: center;
+padding:  3.75rem 31.6875rem;
+
+
+}
+.Hero__container{
+    
+  width: 26.625rem;
+  max-width: 26.625rem;;
+  height: 25.25rem;
+  padding: 3.75rem 0px;
+
+}
+.Hero__container p{
+    font-family: 'allura';
+    width: 100%;
+    height:1.5rem;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+   
+
+.Hero__header{
+    height: 9rem;
+    width: 26.625rem;
+    margin-bottom: 12px;
+}
+
+.Hero__header h1{
+   
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.18em;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    
+}
+.Hero__header  h1 span{
+    display: block;
+    text-align: left;
+    width: 100%;
+    font-size: 31.7px;
+    
+   
+}
+
+.Hero__container button{
+    width: 14.6875rem;
+    height: 3.5rem;
+    background-color: #181C29;
+    color: #FFFFFF;
+    font-size: 11.8px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    line-height: 15.6px;
+    letter-spacing: 0.05em;
+    border-radius: 20px;
+    margin: 0  95.5px 12px 95.5px;
+    padding: 20px 32px;
+    border: 0px;
+
+}
+.Hero__container button:hover{
+    color: #000;
+    background-color: #FFFFFF ;
+}
+
+
+
+
+
+/*HERO SECTION STYLE*/
+
+/*about style                                                              */
+#About{
+    width: 100%;
+    height: 40.5rem;
+    background-color: #FF4646;
+    background-image: url("images/bg-snow.png");
+    background-size: cover;
+    background-position: center;
+    padding: 60px 82px;
+    
+
+}
+
+
+.About__container{
+    max-width: 79.75rem;
+    height: 33rem;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+
+}
+.About__container img{
+    width: 39.875rem;
+    height: 33rem;
+    border-radius: 20px;
+    float:right;
+}
+.About__container-left{
+    width: 26.625rem;
+    height:20.5rem;
+    padding: 60px 0;
+    margin: 6.25rem 9.5rem 6.25rem 3.75rem;
+    float:left;
+}
+
+.About__container-left :first-child{
+  
+    text-align: left;
+    color: #FF4646;
+    margin-bottom: 20px;
+   
+}
+.About__container-left h2{
+    
+    
+    color: #181C29;
+    margin-bottom: 20px;
+}
+
+.About__container-left :last-child{
+
+    width: 26.624rem;
+    height:4.5rem;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.68px;
+    color: #181C29;
+}
+
+
+/*About style                                                     */
+/*Slider Section Style                                              */
+#Slider{
+    height: 30.5rem;
+    background-color: #FF4646;
+    background-image: url(../christmas-shop/images/bg-snow.png);
+    padding: 60px 82px;
+
+}
+.Slider__header{
+    width: 26.625;
+    height:4.5rem;
+    margin: 0px 425px 20px 425px;
+    text-align: center;
+}
+.Slider__header p{
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+.Slider__header h2{
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.allura{
+    font-family: 'allura';
+    width: 100%;
+    height:1.5rem;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+
+}
+.montserrat{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36.48px;
+    letter-spacing: 0.16em;
+    text-align: left;
+    text-transform: uppercase;
+}
+.slider__row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.slider__row p{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 97.52px;
+    text-align: center;
+    color:white;
+    text-transform: uppercase;
+ 
+
+}
+.slider__row img{
+    max-width: 12.5rem;
+    max-height: 12.5rem;
+    border-radius: 20px;
+
+
+} 
+
+.slider img{
+    width: 24px;
+    height: 24px;
+    background-color: #FF4646;
+    
+
+}
+.slider button{
+    
+    background-color: #FF4646;
+    width: 56px;
+    height: 56px;
+    border-radius: 20px;
+    border: 1px solid #FFFFFF66;
+    
+
+}
+.slider{
+    padding-left:71.5rem;
+    display: flex;
+    gap: 20px;
+}
+.slidbar__button1  :hover{
+    background-color: #141212;
+    border: 1px solid #FFFFFF66;
+    
+}
+.slidbar__button2  :hover{
+    background-color: #141313;
+    border: 1px solid #FFFFFF66;
+    
+  
+}
+.slidbar__button1 :active{
+    border: 1px solid #0a0a0a66;
+    
+}
+.slidbar__button2 :active{
+    border: 1px solid #0a0a0a66;
+    
+}
+/*                                                   */
+#BestGitf{
+    height: 34.625rem;
+    padding: 60px 82px;
+    background-color: #FF4646;
+    background-image: url(../christmas-shop/images/bg-snow.png);
+    text-align: center;
+    
+
+
+}
+.BestGift__header p{
+    color:#FFFFFF;
+    margin-bottom: 12px;
+    
+}
+.BestGift__header h2{
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.BestGift__container{
+    width: 100%;
+    height: 21.375rem;
+    display: flex;
+    gap:12px;
+    text-align: left;
+}
+
+.cards{
+    width:19.375rem;
+    height:21.375rem ;
+    border-radius: 20px;
+    background-color: #ECF3F8;
+}
+
+.cards img{
+    width: 19.375rem;
+    height: 14.375rem;
+
+}
+
+.cards div{
+    width: 19.375rem;
+    height: 7rem;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+
+.cards div a{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15.6px;
+    letter-spacing: 0.05em;
+    color: #4361FF;
+    text-transform: uppercase;
+
+}
+.cards div h3{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24.32px;
+    letter-spacing: 0.08em;
+    color: #181C29;
+    text-transform: uppercase;
+}
+
+.BestGift__container .cards:nth-of-type(2) h4 a{
+    color: #06A44F;
+    
+    
+}
+.BestGift__container .cards:nth-of-type(4) h4 a{
+    color: #FF43F7;
+    
+    
+}
+#CTA{
+    height: 41.75rem;
+    width:100%;
+    background-color: #FF4646;
+    background-image: url(../christmas-shop/images/bg-forest.png), url(../christmas-shop/images/bg-snow.png);
+    background-size: cover;
+    background-position: center;
+    padding: 60px 82px;
+}
+.cta__container{
+    width: 79.75rem;
+    max-width: 79.75rem;
+    height: 34.25rem;
+    padding: 60px 425px;
+    
+
+}
+.cta__container1{
+    width: 26.625rem;
+    max-width: 26.625rem;
+    height: 26.75rem;
+    padding: 60px 0px;
+}
+.cta__container1 h2{
+    ;
+    color: #FFFFFF;
+    text-align: center;
+}
