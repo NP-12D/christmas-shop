@@ -196,10 +196,12 @@ li.nav__item:hover{
 
 /*                         */
 #BestGitf{
-    height: 34.625rem;
+    width: 100%;
+    height: 1110px;
     padding: 0px 82px 60px 83px;
     background-color: #FF4646;
     text-align: center;
+    border-radius: 20px;
     
 
 
@@ -207,11 +209,13 @@ li.nav__item:hover{
 
 
 .BestGift__container{
-    width: 100%;
-    height: 21.375rem;
+    width: 1276px;
+    height: 1050px;
     display: flex;
     gap:12px;
+    flex-wrap: wrap;
     text-align: left;
+    background-color: #FF4646;
 }
 
 .cards{
@@ -257,4 +261,94 @@ li.nav__item:hover{
     color: #181C29;
     text-transform: uppercase;
    margin-top: 8px;
+}
+#footer{
+    width: 100%;
+    height: 31rem;
+    padding: 60px 82px;
+    background-color: #FFFFFF;
+
+}
+.footer__container{
+    width:  79.75rem;
+    height: 23.5rem;
+    max-width:79.75rem ;
+  
+
+}
+.footer__content{
+    width: 26.083125rem;
+    height:12.75rem;
+    display: flex;
+    gap:12px;
+   
+}
+.footer__item{
+    width: 26.083125rem;
+    height: 12.75;
+    background-color: #ECF3F8;
+    border-radius: 20px;
+    padding: 20px;
+  
+}
+.footer__item img{
+    width: 5rem;
+    height: 5rem;
+    margin: 0px 10.541875rem 12px 9.5rem;
+}
+
+.footer__item p ,.footer__item  h3{
+    text-align: center;
+}
+.footer__item a{
+    color:#181C29;
+   
+}
+.footer__item p {
+    margin-bottom: 12px;
+}
+.footer__item  h3{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24.32px;
+    letter-spacing: 0.08em;
+    color: #181C29;
+    text-transform: uppercase;
+}
+.footer__contact{
+    margin-top: 63px;
+    height:112px;
+}
+.footer__contact-list{
+    width:12.25rem;
+    height:40px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0px 540px 12px 540px;
+
+}
+.footer__contact-list div{
+    width:40px;
+    height: 40px;
+    padding: 8px;
+}
+.footer__contact-list div img{
+    width:24px;
+    height:24px;
+}
+
+
+.footer__contact div + p{
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.68px;
+    margin-bottom: 12px;
+   
+}
+.footer__contact p{
+    text-align: center;
+    
 }
