@@ -502,6 +502,20 @@ section {
    
     
 }
+.slidbar__button1 button img{
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    color: #ECF3F8;
+    transform: rotate(180deg);
+   
+}
+.slidbar__button2 button img{
+    width: 30px;
+    height: 30px;
+   
+   
+}
 .for_slider{
       width: 100%;         
   overflow: hidden;      
@@ -1435,6 +1449,7 @@ header{
     
     
  }
+ 
 
 }
 
@@ -1541,6 +1556,7 @@ header{
         height: 138.947vw;
    
     }
+   
    
 }
 
