@@ -86,23 +86,21 @@ function updateCountdown() {
 const timerInterval = setInterval(updateCountdown, 1000);
 updateCountdown();
 
+
 const row = document.querySelector(".slider__row");
-const items = row.querySelectorAll(".slider__row div");
-const prevBtn = document.querySelector(".slidbar__button1 button");
+const items = document.querySelectorAll(".slider__row div");
 const nextBtn = document.querySelector(".slidbar__button2 button");
+const prevBtn = document.querySelector(".slidbar__button1 button");
 
 let index = 0;
 let itemWidth;
-
-const containerWidth = row.offsetWidth;
-
-if (window.screen.width > 900) {
-  itemWidth = 450;
-} else if (window.screen.width > 570) {
-  itemWidth = 500;
-} else {
-  itemWidth = 600;
+if(window.innerWidth<600){
+itemWidth = 600;
 }
+else{
+  itemWidth = 400;
+}
+
 function updateSlider() {
   const offset = -index * itemWidth;
   row.style.transform = `translateX(${offset}px)`;
@@ -121,7 +119,7 @@ prevBtn.addEventListener("click", () => {
     updateSlider();
   }
 });
-let cards = document.querySelectorAll(".cards");
+
 
 window.addEventListener("resize", updateSlider);
 const modalContent = document.querySelector(".modals");

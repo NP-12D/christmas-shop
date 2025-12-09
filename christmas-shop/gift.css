@@ -655,12 +655,14 @@ width: 100%;
 }
 .close{
     position: absolute;
-    top:10px;
-    right: 10px;
+    top:15px;
+    right: 15px;
     width:20px;
     height:20px;
     border: none;
     font-size: 20px;
+ 
+    color:#FF4646;
 }
 #myBtn {
     display: none;
