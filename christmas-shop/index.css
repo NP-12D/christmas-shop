@@ -496,7 +496,7 @@ section {
     display: flex;
     justify-content: space-between;
     transition: transform 0.5s ease;
-    gap: 40px;
+    
     
   
    
@@ -530,7 +530,7 @@ section {
     text-align: center;
     color:white;
     text-transform: uppercase;
-    width: max-content;
+    width: 350px;
   
      
     
@@ -541,10 +541,13 @@ section {
 
 .slider__row div{
     display: flex;
-    width: fit-content;
+   
     align-items: center;
-    justify-content: space-around;
- gap: 40px;
+    justify-content: center;
+    
+    max-width: 350px;
+    min-width: 350px;
+
  
     
     
@@ -1449,7 +1452,16 @@ header{
     
     
  }
- 
+ .slider__row div{
+    max-width: 200px;
+    min-width: 200px;
+   
+ }
+ .slider__row div p{
+
+   font-size: 40px;
+   width: 200px;
+ }
 
 }
 

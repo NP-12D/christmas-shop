@@ -92,17 +92,17 @@ const items = document.querySelectorAll(".slider__row div");
 const nextBtn = document.querySelector(".slidbar__button2 button");
 const prevBtn = document.querySelector(".slidbar__button1 button");
 
-let index = 0;
+let index = 1;
 let itemWidth;
 if(window.innerWidth<600){
-itemWidth = 600;
+itemWidth = 200;
 }
 else{
-  itemWidth = 400;
+  itemWidth = 350;
 }
 
 function updateSlider() {
-  const offset = -index * itemWidth;
+  const offset = -index* itemWidth;
   row.style.transform = `translateX(${offset}px)`;
 }
 
