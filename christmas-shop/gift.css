@@ -1,23 +1,87 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-body{
-    max-width: 1440px;
-    min-width: 1440px;
-    margin: auto;
+.html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
     box-sizing: border-box;
-    font-family: Montserrat;
-  
+ 
+}
+body{
+    
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow-x: hidden;
+   
 
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+}
+.container__list{
+     
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  
+}
+.nav__burger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(4.4px, 4px);
 }
 
+.nav__burger.active span:nth-child(2) {
+  transform: rotate(-45deg) translate(4.4px, -4px);
+}
+.fullpagemenu{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    z-index: 99;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    flex-direction: column;
+    margin: 0;
+}
+.fullpagemenu_list{
+    width:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+ .container__item {
+    padding: 12px 20px;
+    border-radius: 12px;
+  }
+.container__item a{font-family: Montserrat;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 12px;
+line-height: 130%;
+letter-spacing: 5%;
+text-transform: uppercase;
+}
 
 
 /* Headre style*/
@@ -25,21 +89,57 @@ body{
     
     width: 24px;
     height: 24px;
-    margin-right: 8px;
+
    
 
 
+}
+header{
+    max-width: 1440px;
+    width: 100%;
+    height: 64px;
+    overflow: hidden;
+    padding: 12px 82px;
 }
 nav{
-    
+
+    width: 100%;
     display: flex;
     justify-content: space-between;
-   align-items: center;
-   padding: 12px 82px ;
-   text-align: center;
+    align-items: center;
+    text-align: center;
    
 
 }
+.activelink{
+    background-color: #FFFFFF33;
+}
+  
+
+
+
+  
+  .nav__burger {
+    display: none ;
+    
+   
+    
+  }
+    
+  
+  
+  .line {
+    width: 22px;
+    height: 2px;
+    background-color: black;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+    
+  }
+  
+ 
+
+
 .logo__text{
    
     font-family: 'Montserrat';
@@ -56,80 +156,88 @@ nav{
 }
 
 .Logo {
-    box-sizing: border-box;
-    width:8.8125rem;
-    height: 2.5rem;
-  display: flex;
-  align-items: center;
   
-  padding: 8px 20px;
-}
-a{
-    text-decoration: none;
-    color:#FFFFFF;
-   
-}
-
-.container__item:hover{
-    background-color: rgb(6, 6, 6,0.2);
-    color:red;
- 
-}
-.container{
-   
-    width: 70.1875rem ;
-    height: 2.5rem;
-    margin-left: 19px;
-    box-sizing: border-box;
-    padding-left: 46.6875rem;
     
-
-
-}
-.container__list{
-    
-    list-style: none;
     display: flex;
-    justify-content: right;
     align-items: center;
-    margin: 0px;
-    padding: 0;
-    
-    
+    justify-content: center;
+    padding: 8px 20px;
+    gap:8px;
+
    
 }
-.container__item{
-padding: 12px 20px;
-margin-right: 8px;
-font-family: 'Montserrat';
-font-size: 12px;
-font-weight: 600;
-line-height: 15.6px;
-letter-spacing: 0.05em;
-text-align: left;
+a,button{
+    text-decoration: none;
+    color:#181C29;
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+   
 }
+
+
+
+
+
+
+
 .container__item a{
     color:#181C29;
 }
-/*    */
+.container__item:hover a{
+    color:#FF4646;
+}
+.container__item:hover
+{
+    background:  #FF46461A;
+    border-radius: 12px;
 
-.container__background{
+}
+/*    */
+/* font style                      */
+.allura{
+    font-family: 'allura';
     width: 100%;
-    height: 220px;
+    height:1.5rem;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+ 
+}
+.montserrat{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36.48px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap:20px;
     background-color: #Ff4646;
+    border-radius: 20px;
+}
+
+.container__background{ 
+    width: 100%;   
+    
     background-image: url("../christmas-shop/images/bg-garland.png");
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
-    position: relative;
-   padding-bottom: 20px;
-    z-index: 1;
    
-   
+   padding-top: 60px;
+   display: flex;
+  align-items: center;
+    justify-content: center;
 }
-.container__content h1{
+.container__background h1{
     color:white;
-    position: absolute;
+    
     top:7.75rem;
     left:507px;
     z-index: 2;
@@ -142,7 +250,7 @@ text-align: left;
     font-size: 32px;
     line-height: 48px;
     letter-spacing: 0.18em;
-    margin-bottom: 20px;
+    
       
     
 }
@@ -152,94 +260,132 @@ text-align: left;
      background-color: #Ff4646;
 
 }
+.container__list .container__item:first-child a {
+    cursor:default;
+    color: #FF4646;
+}
+.container__list .container__item:first-child{
+    background:  #FF46461A;
+    border-radius: 12px;
+}
 .nav{
+
+    
     width: 100%;
-    padding-left: 483px;
-    padding-right: 483px;
-    padding-bottom: 20px;
+    
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex:1;
+
     
 }
 .nav__list{
-   width:474px;
-   height:40px;
-   list-style-type: none;
+    
+    
+    list-style-type: none;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap:8px;
-   
+    flex:1;
+   text-align: center;
    
     
       
 }
-.nav__item a{
+.nav__item {
 
+    padding: 12px 20px;
+ border-radius: 12px;
+   
+}
+
+
+.nav__item a{
+    
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
     letter-spacing: 0.05em;
-    margin-bottom: 20px;
+   
     text-align: center;
     text-transform: uppercase;
-}
-
-.nav__item {
-    padding: 12px 20px;
-    border-radius: 12px;
-    height: 40px;
+    color: #FFFFFF;
    
 }
-li.nav__item:hover{
-    background-color: #FFFFFF66;
+
+
+
+
+.nav__item:hover{
+    background: #FFFFFF33;
+    border-radius: 12px;
+    background-color: #FFFFFF33;
+    cursor: default;
 }
+
+
 
 
 /*                         */
-#BestGitf{
-    width: 100%;
-    height: 1110px;
-    padding: 0px 82px 60px 83px;
-    background-color: #FF4646;
-    text-align: center;
-    border-radius: 20px;
+#Gifts{
     
-
-
+    background-image: url(../christmas-shop/images/bg-snow.png);
+    width: 100%;
+     background-color: #FF4646;
+     padding-bottom: 60px;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
 }
-
-
-.BestGift__container{
-    width: 1276px;
-    height: 1050px;
+.Gifts__container{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1276px;
     display: flex;
-    gap:12px;
     flex-wrap: wrap;
-    text-align: left;
-    background-color: #FF4646;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+.Gifts__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* height: 342px; */
+    width: 100%;
+    gap:12px;
+    
+}
 .cards{
-    width:19.375rem;
-    height:21.375rem ;
-    border-radius: 20px;
-    border: 0px;
+    width: 310px;
+    height: 342px;
     background-color: #ECF3F8;
-}
-
-.cards img{
-    width: 19.375rem;
-    height: 14rem;
-
-}
-
-.cards div{
-    width: 19.375rem;
-    height: 7rem;
+    overflow: hidden;
+    cursor: pointer;
     border-radius: 20px;
-    padding: 20px 20px 44px 20px;
-    background-color: #FFFFFF;
-    border:0px;
+
+
 }
+.cards img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+   
+   
+}
+.cards div{
+    box-sizing: border-box;
+    height: 112px;
+    padding: 20px 20px 0 20px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    text-align: left;
+}
+
 
 .cards div a{
     font-family: 'Montserrat';
@@ -255,100 +401,526 @@ li.nav__item:hover{
 .cards div h3{
     font-family: 'Montserrat';
     font-weight: 600;
-    font-size: 16px;
-    line-height: 24.32px;
-    letter-spacing: 0.08em;
     color: #181C29;
     text-transform: uppercase;
-   margin-top: 8px;
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 152%;
+    max-height: 48px;
+    letter-spacing: 0.08em;
+    overflow: hidden;
+    display: -webkit-box;
+   
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
 }
+
+.cards:hover h3{
+    color: #FF4646;
+}
+.cards:hover {
+    transform: scale(1.03);
+    transition: all 0.3s;
+}
+.cards h4.work a { color: blue; }
+h4.health  a{ color: green }
+h4.harmony a { color: purple; }
+.modal_img+div h4.work a{color: blue;}
+.modal_img+div h4.health a{color: green ;}
+.modal_img+div h4.harmony a{color: purple;}
+.stars{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+div p:first-child{
+    width:50%;
+    
+
+    
+}
+.modals div h3{
+font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    line-height: 152%;
+    letter-spacing: 8%;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.modals div h4 a{font-family: Montserrat;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+}
+.modals div h4{
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 5px;
+
+}
+.modals div  p{
+     font-weight: 400;
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 5%;
+    margin-bottom: 5px;
+    
+}
+.stars div{
+       display: flex;
+       justify-content: space-between;
+}
+.modalcontainer .modals .star_layt img {
+ 
+  width: 14px;
+  height: 16px;
+  margin-right: 2px;
+
+}
+
+
 #footer{
-    width: 100%;
-    height: 31rem;
+    
+    display: block;
+    unicode-bidi: isolate;
     padding: 60px 82px;
-    background-color: #FFFFFF;
 
 }
 .footer__container{
-    width:  79.75rem;
-    height: 23.5rem;
-    max-width:79.75rem ;
-  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1276px;
 
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
 }
 .footer__content{
-    width: 26.083125rem;
-    height:12.75rem;
+    width: 100%;
     display: flex;
-    gap:12px;
-   
+    gap: 12px;
+    flex:1;
 }
 .footer__item{
-    width: 26.083125rem;
-    height: 12.75;
-    background-color: #ECF3F8;
-    border-radius: 20px;
+    height: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+    flex: 1;
     padding: 20px;
-  
-}
-.footer__item img{
-    width: 5rem;
-    height: 5rem;
-    margin: 0px 10.541875rem 12px 9.5rem;
-}
-
-.footer__item p ,.footer__item  h3{
-    text-align: center;
-}
-.footer__item a{
-    color:#181C29;
+    background-color: #ECF3F8;
+    color: var(--dark);
+    border-radius: 20px;
+    cursor: pointer;
+    box-sizing: content-box;
    
 }
-.footer__item p {
-    margin-bottom: 12px;
+.footer__item img{
+    
+        width: 80px;
+        height: 80px;
+   
 }
-.footer__item  h3{
+
+.footer__item p{
     font-family: 'Montserrat';
+    text-align: center;
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 0.16em;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 24.32px;
-    letter-spacing: 0.08em;
-    color: #181C29;
     text-transform: uppercase;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #181C29;
+    text-align: center;
+}
+.footer__item h3{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 152%;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0px;
+    color: #181C29;
+
 }
 .footer__contact{
-    margin-top: 63px;
-    height:112px;
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+     row-gap: 12px;
+     text-align: center;
+    
 }
 .footer__contact-list{
-    width:12.25rem;
-    height:40px;
     display: flex;
-    align-items: center;
-    gap: 12px;
-    margin: 0px 540px 12px 540px;
+    justify-content: center;
+     align-items: center;
+    gap:12px;
+    
+}
+.footer__contact div+p{
+        
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.68px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 
 }
 .footer__contact-list div{
-    width:40px;
+    width: 40px;
     height: 40px;
-    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.footer__contact-list div img{
-    width:24px;
-    height:24px;
+.footer__item:hover p a,.footer__item:hover h3 a{
+    color: #FF4646;
+
 }
+.footer__contact p:last-child:hover a{
+    color: #FF4646;
 
 
-.footer__contact div + p{
-    font-family: "Montserrat";
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 23.68px;
-    margin-bottom: 12px;
-   
 }
-.footer__contact p{
-    text-align: center;
+/* .modalcontainer{
+    left: -120%;
+} */
+
+.modalcontainer{
+    
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #181C29CC;
+  backdrop-filter: blur(16px);
+  z-index: 9999;
+  transition: left 0.3s ease;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.modalcontainer .modals{
+     width: 310px;
+  
+     background-color: #FFFFFF;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+}
+.modal_img{
+background-color: #ECF3F8;
+width: 100%;
+}
+.modal_img+div{
+    padding: 20px;
+}
+
+.no-scroll{
+    overflow: hidden;
+    height: 100%; 
+    position: fixed;
     
 }
+.modalcontainer .modals img{
+     width: 100%;
+    height: 230px;
+    object-fit: cover;
+    
+
+}
+.close{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    width:20px;
+    height:20px;
+    border: none;
+    font-size: 20px;
+}
+#myBtn {
+    display: none;
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: 1px solid #FF4646 ; 
+    color:#FF4646;
+    background-color: #FFF;
+    border-radius: 100px;
+    width: 56px;
+    height: 56px;
+   
+    
+  }
+  #myBtn svg{
+    width: 24px;
+    height: 24px;
+}
+  
+  #myBtn:hover  {
+     background-color: #2e101033; 
+     
+  }
+  
+
+@media (hover: none), (pointer: coarse) {
+
+    .container__item:hover {
+      
+      background-color: #FFFFFF;
+
+    }
+    .container__item:hover a{
+        color: #181C29;
+    }
+   
+   
+    
+    .cards:hover h3 {
+      color: #181C29;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .footer__item:hover p a,.footer__item:hover h3 a{
+        color: #181C29;
+    
+    }
+    .footer__contact p:last-child:hover a{
+      color: #181C29;
+    
+    }
+    .nav__item:hover{
+        color: #FFFFFF;
+        background-color: #FF4646;
+    }
+    .cards:hover {
+        transform: scale(1);
+    }
+    .cards div a:hover{
+        background-color: #FFFFFF;
+    }
+   
+  
+
+}
+  
+
+@media (max-width: 1190px){
+   header{
+    padding:12px 8px;
+   }
+    #footer{
+        padding:60px 8px;
+    }
+  
+    .footer__content{
+        flex-direction: column;
+    }
+    .Gifts__container{
+       
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    .cards{
+       width: 310px;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        max-width: 768px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+
+    header{
+        padding: 12px 8px;
+    }
+    footer{
+        padding:60px 8px;
+    }
+   
+  
+    
+      .nav__burger {
+        position: fixed;
+        z-index: 9999;
+        top: 23px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+  }
+ .container{
+    display: none;
+ }
+
+    
+    #Hero {
+        width: 100%;
+        padding: 60px 171px;
+    }
+  
+ 
+  
+   
+    .Gifts__container{
+        max-width: 632px;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    .cards{
+       max-width: 310px;
+    }
+    #footer{
+        padding: 60px 8px;
+    }
+
+  
+    .footer__container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+   
+}
+@media (max-width: 500px) {
+    .container__background h1 {
+        max-width: 364px;
+        width: 100%;
+        height: auto;
+    }
+    header{
+        padding: 12px 8px;
+    }
+    .cards{
+        width: 100%;
+    }
+    .nav__list{
+        gap: 0px;
+        justify-content: space-around;
+    }
+    .nav__item{
+        padding: 12px 8px;
+    }
+    .nav__list :first-child.nav__item{
+        background-color: #Ff4646;
+    }
+}
+@media screen and (max-width: 380px) {
+    body {
+        max-width: 380px;
+        width: 100%;
+        font-size: 4.211vw;
+        overflow-x: hidden;
+    }
+    .nav__list :first-child.nav__item{
+        background-color: #Ff4646;
+    }
+header{
+    padding: 12px 8px;
+}
+    section{
+        padding: 60px 8px;
+    }
+
+    .footer__contact{
+        justify-content: center;
+        font-size: 4.211vw;
+    }
+    .Gifts__container{
+        width: 100%;
+    }
+    #Gifts{
+        padding: 0px 8px 60px 8px;
+    }
+   .nav__item a{
+      font-size: 3.158vw;
+    }
+    h1{
+    font-size: 8.421vw;
+    }
+    h2 {
+      font-size: 6.316vw;
+    }
+  
+    
+    h3 {
+      font-size: 4.211vw;
+    }
+  .container__background h1{
+    font-size: 8.421vw;
+
+  }
+  .footer__item p a{
+    font-size: 6.316vw;
+}
+    
+
+    .footer__contact{
+        justify-content: center;
+        font-size: 4.211vw;
+    }
+
+    h4 {
+      font-size: 3.158vw;
+    }
+    .cards{
+        width: 100%;
+        box-sizing: content-box;
+    }
+    .cards img{
+        width: 100%;
+    }
+    .nav__list{
+        gap: 0px;
+        justify-content: space-around;
+    }
+    .nav__item{
+        padding: 12px 8px;
+    }
+   
+
+}
+

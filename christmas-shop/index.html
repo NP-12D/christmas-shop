@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../christmas-shop/Home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas-shop</title>
+    <link rel="icon" href="../christmas-shop/images/icon.svg">
+    <link rel="stylesheet" href="../christmas-shop/index.css">
 </head>
 <body>
     <header>
@@ -15,18 +17,24 @@
              <p class="logo__text" >THE GIFTS</p>
            </div>
          </a>
-        <div class="container">
+         <div class="container">
             <ul class="container__list">
                 <li class="container__item"><a href="../christmas-shop/gift.html" target="_blank"> GIFTS</a></li>
-                <li class="container__item"><a href="#">ABOUT</a></li>
-                <li class="container__item"><a href="#">BEST</a></li>
-                <li class="container__item"><a href="#"> CONTACTS</a></li>
+                <li class="container__item"><a href="#About">ABOUT</a></li>
+                <li class="container__item"><a href="#BestGitf">BEST</a></li>
+                <li class="container__item"><a href="#footer"> CONTACTS</a></li>
 
             </ul>
-        </div>
+         </div>
+        
 
-      </nav>
-        </header>
+        </nav>
+        <div class="nav__burger">
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+   
+     </header>
           
     
     <main>
@@ -35,56 +43,76 @@
          <div class="Hero__container">
              <p> Merry Christmas </p>
              <div  class="Hero__header">
-              <h1> Gift yourself <span>the magic of new</span> possibilities </h1>
+              <h1>Gift yourself<br>the magic of new <br> possibilities </h1>
              </div>
 
-            <button>EXPLORE MAGICAL GIFTS</button>
+             <a href="../christmas-shop/gift.html">EXPLORE MAGICAL GIFTS </a>
           
             <p> and Happy New Year </p>
          </div>
             
         </section> 
         <section id="About">
+            
             <div class="About__container">
                 <div class="About__container-left"> 
+                    
                     <p class="allura">About</p>
                     <h2 class="montserrat">Unleash your inner superhero!</h2>
                     <p>This New Year marks the beginning of your journey to inner harmony and new strengths.
                          We offer unique gifts that will help you improve your life.</p>
+                    
                 </div>
-                <img src="../christmas-shop/images/f22566b024ef613defbb56735b75b191.png" alt="Snowman">
+                <div class="About__container-right">
+                  <img src="../christmas-shop/images/f22566b024ef613defbb56735b75b191.png" alt="Snowman">
+                </div>
             </div>
            
         </section>
         <section id="Slider">
+         <div class="Slider_content">
            <div class ="Slider__header">
-            <p class="allura">Become Happier!</p>
-            <h2 class="montserrat"> in the new 2025 </h2>
+             <p class="allura">Become Happier!</p>
+             <h2 class="montserrat"> in the new 2025 </h2>
            </div>
+           <div class="for_slider">
            <div class="slider__row">
+            <div>
             <p>live</p>
             <img src="../christmas-shop/images/snowman.png" alt="Snowmanpng">
+            </div>
+            <div>
             <p>create</p>
             <img src="../christmas-shop/images/christmas-trees.png" alt="christmas-tree">
+            </div>
+            <div>
             <p>Love</p>
             <img src="../christmas-shop/images/christmas-tree-ball.png" alt="christmas-tree-ball">
+            </div>
+            <div>
+            <p>dream</p>
+            <img src="../christmas-shop/images/fairytale-house.png" alt="christmas-tree-ball">
+           </div>
+        </div>
            </div>
            <div class="slider">
-            <div class="slidbar__button1">
-            <button ><img src="../christmas-shop/images/arrow-left.svg" ></button>
+             <div class="slidbar__button1">
+             <button > 🡠  </button>
             </div>
             <div class="slidbar__button2">
-            <button ><img src="../christmas-shop/images/arrow-right.svg" ></button>
+             <button > 🡢  </button>
+            </div>
             </div>
          
            </div>
-       </section>
-       <section id="BestGitf">
-        <div class="BestGift__header">
+        </section>
+        <section id="BestGitf">
+         <div class="BestGitf_con">
+          <div class="BestGift__header">
             <p class="allura">Best Gifts</p>
             <h2 class="montserrat">especially for you</h2>
-        </div>
-        <div class="BestGift__container">
+          </div>
+         <div class="BestGift__container">
             <div class="cards">
                 <img src="../christmas-shop/images/gift-for-work.png" alt="gift-for-work">
                 <div>
@@ -110,18 +138,26 @@
                 <img src="../christmas-shop/images/gift-for-harmony.png" alt="gift-for-work">
                 <div>
                     <h4><a href="#"> For harmony </a></h4>
-                    <h3>Spontaneous Coding Philosopher</h3>
+                    <h3>Console.log Guru</h3>
                 </div>
             </div>
         </div>
+        
+     </div>
 
-       </section>
+    </section>
+   <div class="modalcontainer">
+  <div class="modals"></div>
+</div>
+
+        
+    </div>
 
        <section id ="CTA">
-        <div class= "cta__container">
-          <div class="cta__container1 ">
-          <h2 class="montserrat"> Ready to start your journey to a better version of yourself?</h2>
-          <button>Explore magical gifts</button>
+        <div class= "cta__container1">
+          
+           <h2 class="montserrat"> Ready to start your<br> journey to a better <br>version of yourself?</h2>
+           <a href="../christmas-shop/gift.html">Explore magical gifts</a>
           <div class="cta__timer">
             <p class="allura">The New Year is Coming Soon...</p>
             <div class="timer__container">
@@ -145,12 +181,10 @@
                     <h4>seconds</h4>
                 </div>
 
-            </div>
+            
            </div>
           </div>
        </div>
-       
-       </section>
      
         
     </main>
@@ -159,21 +193,22 @@
             <div class="footer__content">
               <div class="footer__item">
                 <img src="../christmas-shop/images/Group.svg" alt="santa">
-                <p><a href="tel+375291112233" class="montserrat">+375 (29) 111-22-33</a></p>
-                <h3><a href="tel+375291112233" >CAll us</a></h3>
+                <p><a href="tel:+375291112233" class="montserrat">+375 (29) 111-22-33</a></p>
+                <h3><a href="tel:+375291112233" >CAll us</a></h3>
               </div>
               <div class="footer__item">
                 <img src="../christmas-shop/images/christmas-tree.svg" alt="santa">
-                <p><a href="#" class="montserrat"> magic forest</a></p>
+                <p><a href="https://maps.app.goo.gl/MuWPKGfn6rmg8Njf7" target="_blank" class="montserrat"> magic forest</a></p>
                 <h3><a href="#" >Meet us</a></h3>
               </div>
               <div class="footer__item">
                 <img src="../christmas-shop/images/snake.svg" alt="santa">
                 <p><a href="mailto:gifts@magic.com" class="montserrat">Gifts@magic.com</a></p>
                 <h3><a href="mailto:gifts@magic.com" >write us</a></h3>
-             </div>
+              </div>
            </div>
-            <div class="footer__contact">
+
+           <div class="footer__contact">
                 <div class="footer__contact-list">
                     <div>
                         <a href="#"><img src="../christmas-shop/images/telegram.svg" alt="telegramicon"></a>
@@ -188,12 +223,18 @@
                         <a href="#"><img src="../christmas-shop/images/X.svg" alt="twitericon"></a>
                     </div>
                 </div>
-                <p > &copy; Copyright 2025, All Rights Reserved</p>
-                <p class="allura">Made in Roling Scopes School</p>
+                    <p > &copy; Copyright 2025, All Rights Reserved</p>
+                    <p class="allura"><a href="https://rs.school/" target="_blank">Made in Roling Scopes School </a></p>
+               
             </div>
 
+            
         </div>
+        <button   id="myBtn" title="Go to top"><img src="../arrow-up.svg"> </button>
       
     </footer>
+
+<script src="../christmas-shop/index.js"></script>
+
 </body>
 </html>
