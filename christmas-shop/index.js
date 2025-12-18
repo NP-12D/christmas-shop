@@ -122,6 +122,8 @@ prevBtn.addEventListener("click", () => {
 
 
 window.addEventListener("resize", updateSlider);
+const cards = document.querySelectorAll(".cards");
+
 const modalContent = document.querySelector(".modals");
 const modalOverlay = document.querySelector(".modalcontainer");
 cards.forEach(card => {
@@ -134,9 +136,9 @@ cards.forEach(card => {
         const filtered = data.filter(item => item.name.toLowerCase() === giftName);
 
         if (filtered.length > 0) {
-          const item = filtered[0]; // get the first match
+          const item = filtered[0]; 
 
-          // Now safe to call getImageByCategory
+        
           const imgurl = getImageByCategory(item.category);
 
           modalContent.innerHTML = `
@@ -156,7 +158,7 @@ cards.forEach(card => {
             </div>
           `;
 
-          // Add stars dynamically
+          
           modalContent.querySelectorAll(".power").forEach(p => {
             const value = parseInt(p.textContent.replace(/\D/g, ""), 10);
             const starCount = Math.min(Math.floor(value / 100), 5);
