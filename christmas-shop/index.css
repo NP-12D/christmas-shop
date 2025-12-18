@@ -646,6 +646,7 @@ width: 100%;
     border: none;
     font-size: 20px;
     color:#FF4646;
+    background-color: transparent;
 }
 .cards h4.work a { color: blue; }
 h4.health  a{ color: green }
